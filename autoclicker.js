@@ -1,4 +1,1 @@
-javascript:(function() {
-    var button = document.querySelector('button'); // select the button element you want clicked
-    button.click(); // simulate a click event on the button
-})();
+javascript:(function(x,y){if(!window.click){window.click=!0,document.body.style.cursor='crosshair';var cps=prompt('Autoclicker CPS: (Under 200 recommended)');if(!cps||isNaN(cps)?(alert(%27You%20entered%20something%20wrong.%20Try%20running%20the%20script%20again.%27),end()):alert(%27Autoclicker%20activated%20at%20%27+cps+%27%20CPS!%20Do%20[ctrl+e]%20to%20stop.%27),addEventListener(%27mousemove%27,e=%3E{x=e.clientX,y=e.clientY}),addEventListener(%27keydown%27,e=%3E{%27e%27===e.key&&e.ctrlKey&&(alert(%27Autoclicker%20deactivated!%20Click%20the%20bookmark%20again%20to%20reactivate!%27),end())}),window.click)var%20int=setInterval(function(){var%20e=document.elementFromPoint(x,y);e&&e.click()},1e3/cps);function%20end(){clearInterval(int),window.click=!1,document.body.style.cursor=%27default%27}}})()
